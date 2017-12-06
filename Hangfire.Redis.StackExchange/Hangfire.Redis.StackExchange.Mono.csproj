@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net46;netstandard1.5</TargetFrameworks>
-    <PackageId>Hangfire.Redis.StackExchange</PackageId>
+    <TargetFrameworks>net45;net46</TargetFrameworks>
+    <PackageId>Hangfire.Redis.StackExchange.Mono</PackageId>
     <Version>1.7.1</Version>
     <Authors>Marco Casamento and contributors</Authors>
     <owners>marcocasamento</owners>
@@ -13,7 +13,7 @@
     <Product>Hangfire Redis Storage</Product>
     <PackageProjectUrl>https://github.com/marcoCasamento/Hangfire.Redis.StackExchange</PackageProjectUrl>
     <Description>
-      Hangfire Redis Storage Based on Redis.StackExchange
+      Hangfire Redis Storage Based on Redis.StackExchange.Mono
       See http://hangfire.io/ for some more info on the main project
     </Description>
     <Summary>
@@ -39,17 +39,17 @@
       - .Net Core Support (thanks to Stefan Polyanszky)
       - Aligned dependency to Hangfire.Core
 </PackageReleaseNotes>
-    <PackageTags>Hangfire Redis</PackageTags>
+    <PackageTags>Hangfire Redis Mono</PackageTags>
     <RepositoryUrl>https://github.com/marcoCasamento/Hangfire.Redis.StackExchange</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseUrl>http://www.gnu.org/licenses/lgpl-3.0.html</PackageLicenseUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyName>Hangfire.Redis.StackExchange.Mono</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="HangFire.Core" Version="1.6.12" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="StackExchange.Redis.Mono" Version="1.0.0" />
   </ItemGroup>
-
 </Project>

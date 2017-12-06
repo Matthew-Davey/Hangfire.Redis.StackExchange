@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;net46;netcoreapp1.1</TargetFrameworks>
+    <TargetFrameworks>net452;net46</TargetFrameworks>
     <!--
       https://xunit.github.io/releases/2.2
       The minimum version of .NET required for desktop CLR unit tests is now .NET 4.5.2. 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hangfire.Redis.StackExchange\Hangfire.Redis.StackExchange.csproj" />
+    <ProjectReference Include="..\Hangfire.Redis.StackExchange\Hangfire.Redis.StackExchange.Mono.csproj" />
   </ItemGroup>
 
   <ItemGroup>
